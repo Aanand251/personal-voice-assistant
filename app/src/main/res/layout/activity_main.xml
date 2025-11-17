@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1E26"
+    tools:context=".MainActivity">
+
+    <!-- ये पीछे के डेकोरेटिव शेप्स हैं -->
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-150dp"
+        android:layout_marginTop="-100dp"
+        android:background="@drawable/shape_blob"
+        android:alpha="0.4" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-120dp"
+        android:layout_marginBottom="-150dp"
+        android:background="@drawable/shape_blob_2"
+        android:alpha="0.5" />
+
+
+    <!-- यह आपका मेन कंटेंट है -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Press the mic and command me"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:elevation="10dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/micButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:contentDescription="Microphone Button"
+        android:src="@drawable/ic_mic"
+        app:backgroundTint="#00BCD4"
+        app:elevation="8dp"
+        app:fabSize="normal"
+        app:tint="@android:color/white" />
+
+</RelativeLayout>
